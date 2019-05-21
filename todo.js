@@ -69,3 +69,10 @@ var todoList = {
    }
 
 };
+
+/*
+shift+alt+a
+   1. We want to get access to the display todos buttons
+   2. We want to run displayTodos MSInputMethodContext,
+   when someone clicks the display todos button
+ */
