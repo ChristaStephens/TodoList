@@ -95,11 +95,26 @@ listen for a user to do something - then telling the
 event listener to do an action when user does something
 needs to have two params.
 */
+//  displayTodosButtons.addEventListener('click', function(){
+//     todoList.displayTodos();
+//  });
 
- displayTodosButtons.addEventListener('click', function(){
-    todoList.displayTodos();
- });
+//  toggleAllButton.addEventListener('click', function(){
+//     todoList.toggleAll();
+//  })
 
- toggleAllButton.addEventListener('click', function(){
-    todoList.toggleAll();
- })
+
+//handles different events
+//all the methods that handle
+//diff events go here
+ var handlers ={
+    //calling the functions from todoList object
+    //grabs info from html to run javascript
+    displayTodos: function(){
+       todoList.displayTodos();
+    },
+    toggleAll: function(){
+       todoList.toggleAll();
+    }
+
+ };
