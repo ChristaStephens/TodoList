@@ -79,3 +79,7 @@ shift+alt+a
    2. We want to run displayTodos method,
    when someone clicks the display todos button
  */
+
+ displayTodosButtons.addEventListener('click', function(){
+    todoList.displayTodos();
+ });
