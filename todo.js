@@ -82,6 +82,8 @@ shift+alt+a
  give it "the id" we are able to make changes to the html
  remeber 'get elmeent by id' helps to grab the button from
  html
+ 1. pull info from html then alter it with a function->
+ document.getElement then addEventListner
  */
 var displayTodosButtons= document.getElementById('displayTodosButton');
 var toggleAllButton= document.getElementById('toggleAllButton');
