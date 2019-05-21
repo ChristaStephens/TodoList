@@ -128,9 +128,22 @@ needs to have two params.
     changeTodo: function(){
        var changeTodoPositionInput = document.getElementById("changeTodoPositionInput");
        var changeTodoTextInput = document.getElementById("changeTodoTextInput");
+       //value as number to return a number and not a string
        todoList.changeTodo(changeTodoPositionInput.valueAsNumber, changeTodoTextInput.value);
        changeTodoPositionInput.value="";
        changeTodoTextInput.value ="";
+    },
+
+    deleteTodo: function(){
+       var deleteTodoPositionInput = document.getElementById("deleteTodoPositionInput");
+       todoList.deleteTodo(deleteTodoPositionInput.valueAsNumber);
+       deleteTodoPositionInput ="";
+    },
+
+    toggleCompleted: function(){
+       var toggleCompletedPositionInput = document.getElementById("toggleCompletedPositionInput");
+       todoList.toggleCompleted(toggleCompletedPositionInput.valueAsNumber);
+       toggleCompletedPositionInput ="";
     }
 
  };
