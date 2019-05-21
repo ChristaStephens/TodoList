@@ -115,6 +115,10 @@ needs to have two params.
     },
     toggleAll: function(){
        todoList.toggleAll();
+    },
+    addTodo: function(){
+       var addTodoTextInput = document.getElementById("addTodoTextInput");
+       todoList.addTodo(addTodoTextInput.value);
     }
 
  };
