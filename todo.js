@@ -70,9 +70,6 @@ var todoList = {
 
 };
 
-var displayTodosButtons= document.getElementById('displayTodosButton');
-console.log(displayTodosButtons);
-
 /*
 shift+alt+a
    1. We want to get access to the display todos buttons
@@ -80,6 +77,27 @@ shift+alt+a
    when someone clicks the display todos button
  */
 
+ /*
+ accesses the dom with javascript. using the name that we
+ give it "the id" we are able to make changes to the html
+ remeber 'get elmeent by id' helps to grab the button from
+ html
+ */
+var displayTodosButtons= document.getElementById('displayTodosButton');
+var toggleAllButton= document.getElementById('toggleAllButton');
+
+
+/*
+display todos - using a var to grab the information to
+listen for a user to do something - then telling the
+event listener to do an action when user does something
+needs to have two params.
+*/
+
  displayTodosButtons.addEventListener('click', function(){
     todoList.displayTodos();
  });
+
+ toggleAllButton.addEventListener('click', function(){
+    todoList.toggleAll();
+ })
