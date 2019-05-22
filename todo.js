@@ -157,5 +157,4 @@ var view = {
       todosUl.appendChild(todoLi);
    }
 
-   
 };
