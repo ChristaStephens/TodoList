@@ -152,11 +152,17 @@ Responsible for what the user sees
  */
 var view = {
    displayTodos: function(){
+      //grabs ul from html
       var todosUl = document.querySelector("ul");
       //clear the ul after a new item is added.
       todosUl.innerHTML ="";
+
+      //loops through each list item and creates a new element
+      //while adding a li item to the ul
       for (var i =0; i<todoList.todos.length;i++){
          var todoLi = document.createElement("li");
+         //sets text content of element
+         todoLi.textContent = todoList.todos[i].todoText;
          todosUl.appendChild(todoLi);
       }
    }
